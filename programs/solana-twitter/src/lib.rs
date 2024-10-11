@@ -29,7 +29,6 @@ pub mod solana_twitter {
         Ok(())
     }
 }
-
 #[derive(Accounts)]
 pub struct SendTweet<'info> {
     #[account(init, payer = author, space = Tweet::LEN)]
